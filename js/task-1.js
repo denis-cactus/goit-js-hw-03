@@ -1,16 +1,3 @@
-// function calculateTotalPrice(order) {
-//   let totalPrice = 0;
-//   for (let item of order) {
-//     totalPrice += item;
-//   }
-//   return totalPrice;
-// }
-// console.log(calculateTotalPrice([10, 25, 56, 45]));
-
-// let num = 10;
-// for (let i = 0; i <= num; i++) {
-//   console.log(i);
-// }
 function slugify(text) {
   return text.toLowerCase().trim().replace(/\s+/g, '-');
 }
