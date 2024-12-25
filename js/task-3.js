@@ -1,54 +1,18 @@
-// // function sum(a, b) {
-// //   console.log(arguments);
-// //   return a + b;
-// // }
+// Напиши функцію filterArray(numbers, value), яка приймає масив чисел (numbers) та значення (value) як параметри. Функція повинна повертати новий масив лише тих чисел із масиву numbers, які більші за значення value.
 
-// // sum(2, 5);
-// function sum() {
-//   let total = 0;
-//   for (let i = 0; i < arguments.length; i++) {
-//     total += arguments[i];
-//   }
-//   return total;
-// }
-// console.log(sum(3, 5)); // 8
-// console.log(sum(1, 2, 3, 4, 5, 8, 9, 65, 423));
+// Усередині функції:
 
-// function createReversedArray() {
-//   const args = Array.from(arguments);
-//   return args.reverse();
-// }
-// console.log(createReversedArray(1, 2, 3));
-/*
- *   Функція calculateTax(amount, taxRate) оголошує два параметри:
- *   amount - число, сума від якої потрібно обчислити податок. Обов'язковий параметр.
- *   taxRate - число, податкова ставка. Необов'язковий параметр. За замовчуванням його значення має бути 0.2.
- *   Доповни код функції так, щоб вона повертала суму податку - результат множення суми на податкову ставку.
+// Створи порожній масив, у який будеш додавати підходящі числа.
+// Використай цикл для ітерації кожного елемента масиву numbers.
+// Використовуй умовний оператор if усередині циклу для перевірки кожного елемента и додавання до свого масиву.
+// Поверни свій новий масив з підходящими числами як результат.
 
- */
-// function calculateTax(amount, taxRate = 0.2) {
-//   return amount * taxRate;
-// }
-// console.log(calculateTax(100, 0.1));
-// const multiply = function (x, y, z) {
-//   console.log(x * y * z);
-// };
-// console.log(function calculateTax(amount, taxRate = 0.2) {
-//   return amount * taxRate;
-// }
-// console.log(calculateTax(100, 0.1));
-function bar() {
-  console.log('bar');
-}
+// Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
-function baz() {
-  console.log('baz');
-}
+function filterArray(numbers, value) {}
 
-function foo() {
-  console.log('foo');
-  bar();
-  baz();
-}
-
-foo();
+console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
+console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
+console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
+console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
+console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
